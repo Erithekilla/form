@@ -2,7 +2,6 @@ const btn = document.querySelector('#btn')
 const nomeT = 'Erick'
 const emailT = 'erick@gmail.com'
 const senhaT = '12345678'
-const home = import('./pags/home.html')
 
 
 function dados() {
@@ -13,7 +12,7 @@ function dados() {
 
     if(nome == nomeT && email == emailT && senha == senhaT){
         p.innerHTML = `Correcto!`
-        window.open('home', '_self')
+        window.open('https://erithekilla.github.io/form/pags/home', '_self')
     }else{
         p.innerHTML = `Error`
     }
@@ -33,4 +32,6 @@ function login(){
 }
 
 btn.addEventListener('click', dados)
+
+console.log('Nome: Erick | Email: erick@gmail.com | Senha: 12345678')
 
